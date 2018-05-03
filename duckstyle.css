@@ -1,0 +1,36 @@
+.animate {
+  margin: 200px 0 200px 0;
+  font-family: 'Gugi', cursive;
+  font-family: inherit;
+  font-weight: 900;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  mix-blend-mode: overlay;
+  animation-name: first;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: 13s;
+  animation-direction: alternate;
+  animation-delay: -3000ms;
+}
+
+.animate p {
+  font-size: 80px;
+  font-family: 'Gugi', cursive;
+}
+
+@keyframes first {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+
+  }
+
+  to {
+    transform: translateY(0px);
+
+    opacity: 1;
+}
+}

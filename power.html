@@ -1,0 +1,53 @@
+<!doctype html>
+
+    <html>
+      <head>
+        <title>Red & Ducks</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="duckstyle.css">
+    </div>
+    <body>
+      <a class="button"><div class="menu"></div></a>
+      <a class="closelink"><div class="menu"></div></a>
+
+      <div class="navigation">
+        <a href = "home.html"> home </a>
+        <a href = "purpose.html"> purpose </a>
+        <a href = "power.html"> power </a>
+        <a href = "enemy.html"> enemy </a>
+        <a href = "residence.html"> residence </a>
+      </div>
+
+<div class="emblem"><img src="emblem.svg"></div>
+
+
+    <p>  Red tries alleviates other people’s problems whenever she encounters one
+      <br>regardless of how occupied she is.
+      <br> The ducks have useful abilities that help Red during battles.
+      <br>Some ducks have the ability to act as anchor points
+      <br> in which Red can use these anchor points to </p>
+      <br><p>teleport from</p>
+        <div class="animate"><p>POINT A
+          <br>to
+          <br>POINT B</p></div>
+        <br><p>During battle, Red throws the baby ducks in which they explode onto the enemy.
+          <br>No ducks are ever harmed because they have the ability to regenerate on their own. </p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$( document ).ready(function() {
+
+  $(".button").click(function(){
+    $(".navigation").toggleClass("open");
+    $(this).toggleClass("active");
+  });
+
+  $(".closelink").click(function(){
+    $(".navigation").toggleClass("open");
+  });
+
+});
+</script>

@@ -1,0 +1,120 @@
+body, html{
+background-image: url("background2.svg"),linear-gradient(126deg, #742187, #ed5ca6);
+font-family: 'Oswald', sans-serif;
+color: #012954;
+z-index: 1;
+background-size: 400% 400%;
+animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+.rebel a {
+  display:block;
+  margin: 100px 0 300px 0;
+  font-family: 'Gugi', cursive;
+  font-size: 80px;
+  color:#f7d1ff;
+}
+
+.rebel:hover {
+    text-decoration:underline;
+    text-shadow: 4px 5px 10px red;
+    transition: 300ms;
+  }
+.emblem {
+  width:20%;
+  height:20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  text-align: center;
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #012954;
+}
+
+.menu {
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+
+.navigation {
+  width:10%;
+  height:30%;
+  position:fixed;
+  overflow-x:hidden;
+  left:20px;
+  top:160px;
+  bottom:0;
+  /* background-image: url()
+  use opacity animation to fade out from duck */
+  background:rgba(0,0,0,.5);
+  transform:translateY(-300px);
+  transition:300ms;
+  opacity: 0;
+
+}
+
+.navigation.open {
+  transform:translateY(0%);
+  opacity: 1;
+}
+
+.navigation a {
+  display:block;
+  padding:.3em;
+  transition:300ms;
+  transition-delay:700ms;
+  transform:translateY(10%);
+}
+
+.navigation.open a {
+  color:white;
+  display:block;
+  transform:translateY(0%);
+}
+
+.navigation.open a:nth-child(3) {
+  transition-delay:500ms;
+}
+
+.navigation.open a:nth-child(4) {
+  transition-delay:600ms;
+}
+
+.navigation.open a:nth-child(5) {
+  transition-delay:700ms;
+}
+
+.button{
+  display:block;
+  position: fixed;
+  z-index: 20;
+  top:20px;
+  left:20px;
+  font-size:18px;
+  transition:300ms;
+  padding:1em;
+  background-image: url("navigation1.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button.active {
+  background-image: url("navigation2.svg");
+
+}
