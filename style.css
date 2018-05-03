@@ -1,10 +1,11 @@
 body, html{
 background-image: url("background2.svg"),linear-gradient(126deg, #742187, #ed5ca6);
 font-family: 'Oswald', sans-serif;
-color: #012954;
+color: #52FFB4;
 z-index: 1;
 background-size: 400% 400%;
-animation: gradient 10s ease infinite;
+animation: gradient 25s ease infinite;
+cursor: url('cursor2.png'), pointer;
 }
 
 .careless {
@@ -37,10 +38,12 @@ animation: gradient 10s ease infinite;
   color:#f7d1ff;
 }
 
+
 .rebel:hover {
     text-decoration:underline;
     text-shadow: 4px 5px 10px red;
     transition: 300ms;
+    cursor: url('cursor3.png'), pointer;
   }
 .emblem {
   width:20%;
@@ -48,6 +51,10 @@ animation: gradient 10s ease infinite;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.emblem:hover {
+    cursor: url('cursor3.png'), auto;
 }
 
 p {
@@ -75,11 +82,16 @@ a {
   height:30%;
   position:fixed;
   overflow-x:hidden;
+  font-size: 19px;
   left:20px;
   top:160px;
   bottom:0;
   background-image: url("textbox.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
   opacity:0;
+  padding: 40px 20px;
   /* background-image: url()
   use opacity animation to fade out from duck */
   /* background:rgba(0,0,0,.5); */
