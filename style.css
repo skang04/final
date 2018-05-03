@@ -13,7 +13,22 @@ animation: gradient 10s ease infinite;
     100%{background-position:0% 50%}
 }
 
+.dimensions {
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+  font-size: 100px;
+  color:#ffffff;
+  opacity: .9;
+  background-blend-mode: overlay;
+}
 
+.dimensions:hover {
+  text-shadow: -10px 10px 0px #eb8cff,
+                -20px 20px 0px #e360ff,
+                -30px 30px 0px #d721ff,
+                -40px 40px 0px #7d0099;
+transition: 800ms;
+}
 .rebel a {
   display:block;
   margin: 100px 0 300px 0;
