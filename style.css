@@ -7,28 +7,28 @@ background-size: 400% 400%;
 animation: gradient 10s ease infinite;
 }
 
+.careless {
+ font-size: 120px;
+ color: #FFE150;
+ position: sticky;
+}
+
+.purpose {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 120px;
+  color: #FF5252;
+  background-color: #FFE150;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
 @keyframes gradient {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
 
-.dimensions {
-  font-family: 'Cinzel', serif;
-  font-weight: 900;
-  font-size: 100px;
-  color:#ffffff;
-  opacity: .9;
-  background-blend-mode: overlay;
-}
 
-.dimensions:hover {
-  text-shadow: -10px 10px 0px #eb8cff,
-                -20px 20px 0px #e360ff,
-                -30px 30px 0px #d721ff,
-                -40px 40px 0px #7d0099;
-transition: 800ms;
-}
 .rebel a {
   display:block;
   margin: 100px 0 300px 0;
@@ -66,6 +66,10 @@ a {
   width: 100px;
 }
 
+.home {
+  margin-top:1000px;
+}
+
 .navigation {
   width:10%;
   height:30%;
@@ -74,10 +78,12 @@ a {
   left:20px;
   top:160px;
   bottom:0;
+  background-image: url("textbox.svg");
+  opacity:0;
   /* background-image: url()
   use opacity animation to fade out from duck */
-  background:rgba(0,0,0,.5);
-  transform:translateY(-300px);
+  /* background:rgba(0,0,0,.5); */
+  transform:translateY(-100px);
   transition:300ms;
   opacity: 0;
 
@@ -85,7 +91,7 @@ a {
 
 .navigation.open {
   transform:translateY(0%);
-  opacity: 1;
+  opacity: .8;
 }
 
 .navigation a {
